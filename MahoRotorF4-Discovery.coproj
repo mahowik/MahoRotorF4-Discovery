@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Project version="2G - 1.7.5" name="MahoRotorF4-Discovery">
+  <Target name="MahoRotorF4-Discovery" isCurrent="1">
+    <Device manufacturerId="9" manufacturerName="ST" chipId="344" chipName="STM32F407VG" boardId="" boardName=""/>
+    <BuildOption>
+      <Compile>
+        <Option name="OptimizationLevel" value="0"/>
+        <Option name="UseFPU" value="0"/>
+        <Option name="UserEditCompiler" value=""/>
+        <Option name="FPU" value="2"/>
+        <Includepaths>
+          <Includepath path="."/>
+        </Includepaths>
+        <DefinedSymbols>
+          <Define name="STM32F407VG"/>
+          <Define name="STM32F4XX"/>
+          <Define name="USE_STDPERIPH_DRIVER"/>
+          <Define name="__ASSEMBLY__"/>
+          <Define name="__FPU_USED"/>
+        </DefinedSymbols>
+      </Compile>
+      <Link useDefault="0">
+        <Option name="DiscardUnusedSection" value="0"/>
+        <Option name="UserEditLinkder" value=""/>
+        <Option name="UseMemoryLayout" value="1"/>
+        <Option name="LTO" value="0"/>
+        <Option name="IsNewStartupCode" value="1"/>
+        <Option name="Library" value="Use base C Library"/>
+        <Option name="UserEditLinker" value=""/>
+        <LinkedLibraries/>
+        <MemoryAreas debugInFlashNotRAM="1">
+          <Memory name="IROM1" type="ReadOnly" size="0x00100000" startValue="0x08000000"/>
+          <Memory name="IRAM1" type="ReadWrite" size="0x00020000" startValue="0x20000000"/>
+          <Memory name="IROM2" type="ReadOnly" size="" startValue=""/>
+          <Memory name="IRAM2" type="ReadWrite" size="0x00010000" startValue="0x10000000"/>
+        </MemoryAreas>
+        <LocateLinkFile path="c:/coocox/coide/configuration/programdata/mahorotorf4-discovery/arm-gcc-link.ld" type="0"/>
+      </Link>
+      <Output>
+        <Option name="OutputFileType" value="0"/>
+        <Option name="Path" value="./"/>
+        <Option name="Name" value="MahoRotorF4-Discovery"/>
+        <Option name="HEX" value="1"/>
+        <Option name="BIN" value="1"/>
+      </Output>
+      <User>
+        <UserRun name="Run#1" type="Before" checked="0" value=""/>
+        <UserRun name="Run#1" type="After" checked="0" value=""/>
+      </User>
+    </BuildOption>
+    <DebugOption>
+      <Option name="org.coocox.codebugger.gdbjtag.core.adapter" value="ST-Link"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.debugMode" value="SWD"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.clockDiv" value="1M"/>
+      <Option name="org.coocox.codebugger.gdbjtag.corerunToMain" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.jlinkgdbserver" value=""/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.userDefineGDBScript" value=""/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.targetEndianess" value="0"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.jlinkResetMode" value="Type 0: Normal"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.resetMode" value="SYSRESETREQ"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ifSemihost" value="0"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ifCacheRom" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ipAddress" value="127.0.0.1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.portNumber" value="2009"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.autoDownload" value="0"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.verify" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.downloadFuction" value="Erase Effected"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.defaultAlgorithm" value="./stm32f4xx_1024.elf"/>
+    </DebugOption>
+    <ExcludeFile/>
+  </Target>
+  <Components path="./">
+    <Component id="54" name="M4 CMSIS Core" path="" type="2"/>
+    <Component id="500" name="CMSIS BOOT" path="" type="2"/>
+    <Component id="501" name="RCC" path="" type="2"/>
+    <Component id="502" name="PWR" path="" type="2"/>
+    <Component id="503" name="CRC" path="" type="2"/>
+    <Component id="504" name="GPIO" path="" type="2"/>
+    <Component id="505" name="EXTI" path="" type="2"/>
+    <Component id="506" name="RTC" path="" type="2"/>
+    <Component id="507" name="IWDG" path="" type="2"/>
+    <Component id="508" name="WWDG" path="" type="2"/>
+    <Component id="509" name="SPI" path="" type="2"/>
+    <Component id="510" name="I2C" path="" type="2"/>
+    <Component id="511" name="DMA" path="" type="2"/>
+    <Component id="512" name="FLASH" path="" type="2"/>
+    <Component id="513" name="TIM" path="" type="2"/>
+    <Component id="514" name="ADC" path="" type="2"/>
+    <Component id="515" name="DAC" path="" type="2"/>
+    <Component id="516" name="FSMC" path="" type="2"/>
+    <Component id="517" name="USART" path="" type="2"/>
+    <Component id="518" name="RNG" path="" type="2"/>
+    <Component id="519" name="HASH" path="" type="2"/>
+    <Component id="520" name="SDIO" path="" type="2"/>
+    <Component id="521" name="CAN" path="" type="2"/>
+    <Component id="522" name="DCMI" path="" type="2"/>
+    <Component id="523" name="CRYP" path="" type="2"/>
+    <Component id="524" name="MISC" path="" type="2"/>
+    <Component id="525" name="DBGMCU" path="" type="2"/>
+    <Component id="526" name="SYSCFG" path="" type="2"/>
+  </Components>
+  <Files>
+    <File name="cmsis_lib/include/stm32f4xx_flash.h" path="cmsis_lib/include/stm32f4xx_flash.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_usart.c" path="cmsis_lib/source/stm32f4xx_usart.c" type="1"/>
+    <File name="src/telemetry.c" path="src/telemetry.c" type="1"/>
+    <File name="src/board.h" path="src/board.h" type="1"/>
+    <File name="src/utils.c" path="src/utils.c" type="1"/>
+    <File name="drv/drv_pwm.h" path="src/drv/drv_pwm.h" type="1"/>
+    <File name="drv/drv_gpio.c" path="src/drv/drv_gpio.c" type="1"/>
+    <File name="src/mw.h" path="src/mw.h" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_dac.h" path="cmsis_lib/include/stm32f4xx_dac.h" type="1"/>
+    <File name="drv/drv_mpu6050.c" path="src/drv/drv_mpu6050.c" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_usart.h" path="cmsis_lib/include/stm32f4xx_usart.h" type="1"/>
+    <File name="src" path="" type="2"/>
+    <File name="cmsis_lib/include/stm32f4xx_crc.h" path="cmsis_lib/include/stm32f4xx_crc.h" type="1"/>
+    <File name="drv/drv_uart.c" path="src/drv/drv_uart.c" type="1"/>
+    <File name="drv/drv_l3g4200d.h" path="src/drv/drv_l3g4200d.h" type="1"/>
+    <File name="cmsis_boot/stm32f4xx.h" path="cmsis_boot/stm32f4xx.h" type="1"/>
+    <File name="cmsis/core_cm4_simd.h" path="cmsis/core_cm4_simd.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_spi.c" path="cmsis_lib/source/stm32f4xx_spi.c" type="1"/>
+    <File name="cmsis/core_cmFunc.h" path="cmsis/core_cmFunc.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_hash.c" path="cmsis_lib/source/stm32f4xx_hash.c" type="1"/>
+    <File name="drv/drv_system.h" path="src/drv/drv_system.h" type="1"/>
+    <File name="drv/drv_ms5611.h" path="src/drv/drv_ms5611.h" type="1"/>
+    <File name="src/config.c" path="src/config.c" type="1"/>
+    <File name="drv/drv_pwm_fy90q.c" path="src/drv/drv_pwm_fy90q.c" type="1"/>
+    <File name="drv/drv_hcsr04.h" path="src/drv/drv_hcsr04.h" type="1"/>
+    <File name="src/mw.c" path="src/mw.c" type="1"/>
+    <File name="drv/drv_hmc5883l.c" path="src/drv/drv_hmc5883l.c" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_iwdg.c" path="cmsis_lib/source/stm32f4xx_iwdg.c" type="1"/>
+    <File name="drv/drv_adc.c" path="src/drv/drv_adc.c" type="1"/>
+    <File name="src/spektrum.c" path="src/spektrum.c" type="1"/>
+    <File name="src/sbus.c" path="src/sbus.c" type="1"/>
+    <File name="src/sensors.c" path="src/sensors.c" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_dac.c" path="cmsis_lib/source/stm32f4xx_dac.c" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_wwdg.c" path="cmsis_lib/source/stm32f4xx_wwdg.c" type="1"/>
+    <File name="drv/drv_mma845x.h" path="src/drv/drv_mma845x.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_rtc.c" path="cmsis_lib/source/stm32f4xx_rtc.c" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_rcc.h" path="cmsis_lib/include/stm32f4xx_rcc.h" type="1"/>
+    <File name="drv/drv_spi.h" path="src/drv/drv_spi.h" type="1"/>
+    <File name="drv/drv_i2c_soft.c" path="src/drv/drv_i2c_soft.c" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_syscfg.c" path="cmsis_lib/source/stm32f4xx_syscfg.c" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_pwr.h" path="cmsis_lib/include/stm32f4xx_pwr.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_hash_sha1.c" path="cmsis_lib/source/stm32f4xx_hash_sha1.c" type="1"/>
+    <File name="cmsis_boot/startup/startup_stm32f4xx.c" path="cmsis_boot/startup/startup_stm32f4xx.c" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_rcc.c" path="cmsis_lib/source/stm32f4xx_rcc.c" type="1"/>
+    <File name="cmsis/core_cmInstr.h" path="cmsis/core_cmInstr.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_pwr.c" path="cmsis_lib/source/stm32f4xx_pwr.c" type="1"/>
+    <File name="drv/drv_adxl345.h" path="src/drv/drv_adxl345.h" type="1"/>
+    <File name="drv/drv_l3g4200d.c" path="src/drv/drv_l3g4200d.c" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_cryp.c" path="cmsis_lib/source/stm32f4xx_cryp.c" type="1"/>
+    <File name="drv/drv_bma280.h" path="src/drv/drv_bma280.h" type="1"/>
+    <File name="drv/drv_mpu3050.h" path="src/drv/drv_mpu3050.h" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_adc.h" path="cmsis_lib/include/stm32f4xx_adc.h" type="1"/>
+    <File name="cmsis_boot/system_stm32f4xx.c" path="cmsis_boot/system_stm32f4xx.c" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_rng.c" path="cmsis_lib/source/stm32f4xx_rng.c" type="1"/>
+    <File name="src/utils.h" path="src/utils.h" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_dcmi.h" path="cmsis_lib/include/stm32f4xx_dcmi.h" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_spi.h" path="cmsis_lib/include/stm32f4xx_spi.h" type="1"/>
+    <File name="src/serial.c" path="src/serial.c" type="1"/>
+    <File name="src/printf.c" path="src/printf.c" type="1"/>
+    <File name="cmsis" path="" type="2"/>
+    <File name="cmsis_lib" path="" type="2"/>
+    <File name="drv/drv_mpu6050.h" path="src/drv/drv_mpu6050.h" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_wwdg.h" path="cmsis_lib/include/stm32f4xx_wwdg.h" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_can.h" path="cmsis_lib/include/stm32f4xx_can.h" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_rtc.h" path="cmsis_lib/include/stm32f4xx_rtc.h" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_hash.h" path="cmsis_lib/include/stm32f4xx_hash.h" type="1"/>
+    <File name="drv/drv_mpu3050.c" path="src/drv/drv_mpu3050.c" type="1"/>
+    <File name="cmsis_lib/include/misc.h" path="cmsis_lib/include/misc.h" type="1"/>
+    <File name="drv/drv_softserial.h" path="src/drv/drv_softserial.h" type="1"/>
+    <File name="drv/drv_bma280.c" path="src/drv/drv_bma280.c" type="1"/>
+    <File name="drv/drv_ms5611.c" path="src/drv/drv_ms5611.c" type="1"/>
+    <File name="drv/drv_pwm.c" path="src/drv/drv_pwm.c" type="1"/>
+    <File name="drv/drv_adc_fy90q.c" path="src/drv/drv_adc_fy90q.c" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_gpio.c" path="cmsis_lib/source/stm32f4xx_gpio.c" type="1"/>
+    <File name="src/mixer.c" path="src/mixer.c" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_i2c.h" path="cmsis_lib/include/stm32f4xx_i2c.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_dma.c" path="cmsis_lib/source/stm32f4xx_dma.c" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_can.c" path="cmsis_lib/source/stm32f4xx_can.c" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_cryp_aes.c" path="cmsis_lib/source/stm32f4xx_cryp_aes.c" type="1"/>
+    <File name="src/printf.h" path="src/printf.h" type="1"/>
+    <File name="cmsis_boot" path="" type="2"/>
+    <File name="cmsis_lib/include/stm32f4xx_syscfg.h" path="cmsis_lib/include/stm32f4xx_syscfg.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_fsmc.c" path="cmsis_lib/source/stm32f4xx_fsmc.c" type="1"/>
+    <File name="drv/drv_spi.c" path="src/drv/drv_spi.c" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_flash.c" path="cmsis_lib/source/stm32f4xx_flash.c" type="1"/>
+    <File name="cmsis_boot/startup" path="" type="2"/>
+    <File name="cmsis/core_cm4.h" path="cmsis/core_cm4.h" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_dbgmcu.h" path="cmsis_lib/include/stm32f4xx_dbgmcu.h" type="1"/>
+    <File name="src/cli.c" path="src/cli.c" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_dbgmcu.c" path="cmsis_lib/source/stm32f4xx_dbgmcu.c" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_cryp_des.c" path="cmsis_lib/source/stm32f4xx_cryp_des.c" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_crc.c" path="cmsis_lib/source/stm32f4xx_crc.c" type="1"/>
+    <File name="src/imu.c" path="src/imu.c" type="1"/>
+    <File name="cmsis_lib/source/misc.c" path="cmsis_lib/source/misc.c" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_adc.c" path="cmsis_lib/source/stm32f4xx_adc.c" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_tim.h" path="cmsis_lib/include/stm32f4xx_tim.h" type="1"/>
+    <File name="drv/drv_bmp085.h" path="src/drv/drv_bmp085.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_i2c.c" path="cmsis_lib/source/stm32f4xx_i2c.c" type="1"/>
+    <File name="cmsis_lib/source" path="" type="2"/>
+    <File name="drv/drv_adxl345.c" path="src/drv/drv_adxl345.c" type="1"/>
+    <File name="drv" path="" type="2"/>
+    <File name="cmsis_boot/stm32f4xx_conf.h" path="cmsis_boot/stm32f4xx_conf.h" type="1"/>
+    <File name="cmsis_boot/system_stm32f4xx.h" path="cmsis_boot/system_stm32f4xx.h" type="1"/>
+    <File name="drv/drv_hcsr04.c" path="src/drv/drv_hcsr04.c" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_dcmi.c" path="cmsis_lib/source/stm32f4xx_dcmi.c" type="1"/>
+    <File name="src/main.c" path="src/main.c" type="1"/>
+    <File name="src/buzzer.c" path="src/buzzer.c" type="1"/>
+    <File name="drv/drv_ledring.c" path="src/drv/drv_ledring.c" type="1"/>
+    <File name="drv/drv_uart.h" path="src/drv/drv_uart.h" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_iwdg.h" path="cmsis_lib/include/stm32f4xx_iwdg.h" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_sdio.h" path="cmsis_lib/include/stm32f4xx_sdio.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_sdio.c" path="cmsis_lib/source/stm32f4xx_sdio.c" type="1"/>
+    <File name="drv/drv_i2c.h" path="src/drv/drv_i2c.h" type="1"/>
+    <File name="drv/drv_serial.c" path="src/drv/drv_serial.c" type="1"/>
+    <File name="drv/drv_hmc5883l.h" path="src/drv/drv_hmc5883l.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_cryp_tdes.c" path="cmsis_lib/source/stm32f4xx_cryp_tdes.c" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_exti.c" path="cmsis_lib/source/stm32f4xx_exti.c" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_exti.h" path="cmsis_lib/include/stm32f4xx_exti.h" type="1"/>
+    <File name="drv/drv_softserial.c" path="src/drv/drv_softserial.c" type="1"/>
+    <File name="drv/drv_bmp085.c" path="src/drv/drv_bmp085.c" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_hash_md5.c" path="cmsis_lib/source/stm32f4xx_hash_md5.c" type="1"/>
+    <File name="drv/drv_mma845x.c" path="src/drv/drv_mma845x.c" type="1"/>
+    <File name="src/gps.c" path="src/gps.c" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_dma.h" path="cmsis_lib/include/stm32f4xx_dma.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_tim.c" path="cmsis_lib/source/stm32f4xx_tim.c" type="1"/>
+    <File name="drv/drv_ledring.h" path="src/drv/drv_ledring.h" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_gpio.h" path="cmsis_lib/include/stm32f4xx_gpio.h" type="1"/>
+    <File name="drv/drv_i2c.c" path="src/drv/drv_i2c.c" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_cryp.h" path="cmsis_lib/include/stm32f4xx_cryp.h" type="1"/>
+    <File name="drv/drv_gpio.h" path="src/drv/drv_gpio.h" type="1"/>
+    <File name="drv/drv_serial.h" path="src/drv/drv_serial.h" type="1"/>
+    <File name="drv/drv_adc.h" path="src/drv/drv_adc.h" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_fsmc.h" path="cmsis_lib/include/stm32f4xx_fsmc.h" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_rng.h" path="cmsis_lib/include/stm32f4xx_rng.h" type="1"/>
+    <File name="cmsis_lib/include" path="" type="2"/>
+    <File name="drv/drv_system.c" path="src/drv/drv_system.c" type="1"/>
+  </Files>
+</Project>
