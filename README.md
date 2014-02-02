@@ -3,7 +3,7 @@ MahoRotorF4-Discovery rev 0.1
 Hey guys! 
 
 Here is fork of BaseFlight-20131126 (with MultiWii 2.3 features) for popular and cheap but powerful STM32F4-DISCOVERY board + GY-86 sensors board (mpu6050 + hmc5883 + ms5611).
-Project was created for CooCox CoIDE 1.7.5 (with toolchain arm-none-eabi-gcc 4_7-2013q3) to simplify stm32 diving for newcomers ;), i.e. it's user-friendly GUI, debug from the box etc. 
+Project was created for CooCox CoIDE 1.7.5 (with toolchain arm-none-eabi-gcc 4_7-2013q3) to simplify stm32 diving for newcomers ;) It's free powerful IDE with user-friendly GUI, debug out from the box etc.
 
 http://www.youtube.com/watch?v=1FZdLTwO87M
 
