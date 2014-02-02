@@ -1,6 +1,7 @@
 MahoRotorF4-Discovery rev 0.1 
 =======
-Hey guys! Here is fork of BaseFlight-20131126 (with MultiWii 2.3 features) for popular and cheap but powerful STM32F4-DISCOVERY board + GY-86 sensors board (mpu6050 + hmc5883 + ms5611).
+Hey guys! 
+Here is fork of BaseFlight-20131126 (with MultiWii 2.3 features) for popular and cheap but powerful STM32F4-DISCOVERY board + GY-86 sensors board (mpu6050 + hmc5883 + ms5611).
 Project was created for CooCox CoIDE to simplify stm32 diving for newcomers ;) I.e. user-friendly GUI, debug from the box etc. 
 
 Current state (tested in hands points):
@@ -15,13 +16,14 @@ Current state (tested in hands points):
    Blue: state of GPS
 
 Big thanks to SergDoc for full set of drivers related to stm32f4 & baseflight https://github.com/SergDoc/Nev_MultirotorControl
-Also thanks to the projects:
+
+Also big thanks for the projects:
 - AQ32
 - FF32
 - MWArmF4
 - BaseFlight & MultiWii by default of cause :)    
    
-Enjoy but remember it's not tested in air! ;)
+Enjoy but remember it's not tested in air yet! ;)
 
      
   
