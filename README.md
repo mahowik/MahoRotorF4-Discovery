@@ -25,7 +25,7 @@ Also big thanks for the projects:
 - AQ32
 - FF32
 - MWArmF4
-- BaseFlight & MultiWii by default of cause :)    
+- BaseFlight & MultiWii by default of course :)    
    
 Enjoy but remember it's not tested in air yet! ;)
 
